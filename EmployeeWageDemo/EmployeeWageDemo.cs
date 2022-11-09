@@ -12,15 +12,21 @@ namespace EmployeeWageDemo
         {
             Console.WriteLine("Welcome to Employee Computation");
             const int EMP_RATE_HR=20;
-            int empPresent = 1;
+            int FullTime = 1;
+            int PartTime = 2;
             int empWage = 0;
             int empHrs = 0;
             Random r = new Random();
-            int empInput = r.Next(0, 2);
-            if (empPresent == empInput)
+            int empInput = r.Next(0, 3);
+            if (FullTime == empInput)
             {
-                Console.WriteLine("Employee is Present");
+                Console.WriteLine("Fulltime Employee is Present");
                 empHrs = 8;
+            }
+            else if(PartTime == empInput)
+            {
+                Console.WriteLine("Parttime Employee is Present");
+                empHrs = 4;
             }
             else
             {
