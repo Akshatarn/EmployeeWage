@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageDemo
 {
-    internal class Program
+    internal class EmployeeWageDemo
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Employee Computation");
+            Console.ReadLine();
+
         }
     }
 }
